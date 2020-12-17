@@ -45,9 +45,7 @@ nav ul li a{
 }
 #Produit{
 display: flex;
-flex-wrap: wrap;
-align-content: center;
-justify-content: center;
+justify-content: space-between;
 }
 
 #contact{
