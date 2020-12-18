@@ -42,9 +42,6 @@ nav ul li a {
   height: 600px;
   display: flex;
 }
-.slogan{
-z-index: 1;
-}
 
 .sail{
     position:absolute;
@@ -70,6 +67,7 @@ font-size: 50px;
 .slogan {
   margin: auto;
   text-align: center;
+  z-index: 1;
 }
 
 .oreiller,
@@ -102,12 +100,11 @@ font-size: 50px;
 
 #contact {
   display: flex;
-  height: 400px;
+  justify-content: space-between;
   background-color: #f2f2f2;
+  padding-bottom:50px ;
 }
-.contactUs {
-  margin: auto;
-}
+
 footer {
   display: flex;
   justify-content: space-around;
@@ -138,12 +135,12 @@ p {
 input[type^="text"] {
   padding: 15px;
   border-radius: 5px;
-  width: 400px;
+  width: 250px;
 }
 input[type^="email"] {
   padding: 15px;
   border-radius: 5px;
-  width: 400px;
+  width: 250px;
   background-color: #c2c2c2;
 }
 input[type^="submit"] {
@@ -160,8 +157,16 @@ input[type^="submit"]:hover {
   color: #fff;
 }
 
-.contactUs h2{
+/* .contactUs h2{
     text-align: center;
+} */
+.contactUs{
+  max-width: 250px;
+}
+
+/* Map */
+.map{
+  padding: 15px;
 }
 
 @media (max-width:1048px){
@@ -175,7 +180,15 @@ input[type^="submit"]:hover {
     margin: 15px auto;
 }
 
+#contact{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.map{
+  order: -1;
+}
 
 footer{
     display: flex;
