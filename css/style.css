@@ -1,68 +1,117 @@
-body{
-    margin: 0;
-    padding: 0;
-    width: 900px;
-    margin: auto;
+body {
+  margin: 0;
+  padding: 0;
+  width: 900px;
+  margin: auto;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
+header {
+  display: flex;
+  justify-content: space-between;
 }
-.logo{
-    display: flex;
-    align-items: center;
+.logo {
+  display: flex;
+  align-items: center;
 }
-ul{
-    display: flex
+ul {
+  display: flex;
 }
-ul li{
-    list-style: none;
-    margin-right: 15px;
-}
-
-nav ul li a{
-    text-decoration: none;
+ul li {
+  list-style: none;
+  margin-right: 15px;
 }
 
-#Hero{
-    background-image: url('https://via.placeholder.com/1920X600');
-    height: 600px;
-    display: flex;
+nav ul li a {
+  text-decoration: none;
 }
-.slogan{
-    margin: auto;
+
+#Hero {
+  background-image: url("https://via.placeholder.com/1920X600");
+  background-position: center;
+  height: 600px;
+  display: flex;
+}
+.slogan {
+  margin: auto;
+  text-align: center;
+}
+
+.oreiller,
+.Lit,
+.Chambre {
+  width: 250px;
+  border: 1px solid black;
+}
+.oreiller img,
+.Lit img,
+.Chambre img {
+  width: 100%;
+}
+#Produit {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact {
+  display: flex;
+  height: 400px;
+  background-color: #f2f2f2;
+}
+.contactUs {
+  margin: auto;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000000;
+}
+footer p {
+  width: 200px;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.oreiller h2,
+p,
+.Lit h2,
+p,
+.Chambre h2,
+p {
+  padding: 0 15px;
+}
+.oreiller p,
+.Lit p,
+.Chambre p {
+  text-align: justify;
+}
+
+/* Fomrulaire*/
+
+input[type^="text"] {
+  padding: 15px;
+  border-radius: 5px;
+  width: 400px;
+}
+input[type^="email"] {
+  padding: 15px;
+  border-radius: 5px;
+  width: 400px;
+  background-color: #c2c2c2;
+}
+input[type^="submit"] {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: blue;
+  color: #fff;
+}
+input[type^="submit"]:hover {
+  background-color: rgb(255, 217, 0);
+  color: #000;
+}
+#email::placeholder {
+  color: #fff;
+}
+
+.contactUs h2{
     text-align: center;
-}
-
-.oreiller,.Lit,.Chambre{
-    width: 250px;
-    border: 1px solid black;
-    
-}
-.oreiller img,.Lit img,.Chambre img{
-    width: 100%;
-}
-#Produit{
-display: flex;
-justify-content: space-between;
-}
-
-#contact{
-    display: flex;
-    height: 400px;
-    background-color: #f2f2f2;
-}
-.contactUs{
-    margin: auto;
-}
-footer{
-    display: flex;
-    justify-content: space-around;
-    background-color: #000000;
-}
-footer p{
-    width: 200px;
-    color: #ffffff;
-    text-align: justify;
 }
