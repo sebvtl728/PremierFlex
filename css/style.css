@@ -10,13 +10,14 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
+
 .logo {
   display: flex;
   align-items: center;
 }
 .logo img{
-    width: 150px;
-    height: 150px;
+    max-width: 150px;
 }
 ul {
   display: flex;
@@ -37,8 +38,34 @@ nav ul li a {
 #Hero {
   background-image: url("https://images.pexels.com/photos/4913537/pexels-photo-4913537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-position: bottom;
+  position: relative;
   height: 600px;
   display: flex;
+}
+.slogan{
+z-index: 1;
+}
+
+.sail{
+    position:absolute;
+    width: 900px;
+    height: 600px;
+    background-color: black;
+    opacity: 0.6;   
+}
+
+
+#Hero p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 55px;
+    color: rgb(0, 187, 255);  
+}
+
+#Hero h2{
+color: #fff;
+font-family: 'Sigmar One', cursive;
+font-size: 50px;
+
 }
 .slogan {
   margin: auto;
@@ -64,6 +91,13 @@ nav ul li a {
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
+}
+
+.line{
+    border-top: 4px solid black;
+    width: 20px;
+    border-radius: 50px;
+    margin:auto
 }
 
 #contact {
