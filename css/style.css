@@ -157,9 +157,6 @@ input[type^="submit"]:hover {
   color: #fff;
 }
 
-/* .contactUs h2{
-    text-align: center;
-} */
 .contactUs{
   max-width: 250px;
 }
