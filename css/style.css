@@ -70,27 +70,21 @@ nav ul li a {
 }
 
 /*========================= Produits ====================*/
-.oreiller,
-.Lit,
-.Chambre {
+.oreiller, .Lit, .Chambre {
   width: 250px;
   border: 1px solid black;
   border-radius: 0 10px;
 }
-.oreiller img,
-.Lit img,
-.Chambre img {
+.oreiller img, .Lit img, .Chambre img {
   width: 100%;
   height: 150px;
   border-radius: 0 10px;
 }
-
 #Produit {
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
 }
-
 .line {
   border-top: 4px solid black;
   width: 20px;
@@ -101,26 +95,25 @@ nav ul li a {
 /*========================= Contact ================*/
 #contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #f2f2f2;
-  padding-bottom: 50px;
+  padding: 15px 0;
 }
-
-.oreiller h2,
-p,
-.Lit h2,
-p,
-.Chambre h2,
-p {
+.oreiller h2, p, .Lit h2, p, .Chambre h2, p {
   padding: 0 15px;
 }
-.oreiller p,
-.Lit p,
-.Chambre p {
+.oreiller p, .Lit p, .Chambre p {
   text-align: justify;
 }
 
 /* Fomrulaire*/
+.contactUs {
+  /* max-width: 250px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 input[type^="text"] {
   padding: 15px;
   border-radius: 5px;
@@ -146,14 +139,11 @@ input[type^="submit"]:hover {
   color: #fff;
 }
 
-.contactUs {
-  max-width: 250px;
-}
 
 /* Map */
-.map {
+/* .map {
   padding: 15px;
-}
+} */
 
 /*========================= Footer =================*/
 footer {
