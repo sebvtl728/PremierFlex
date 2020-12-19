@@ -1,3 +1,4 @@
+/*========================== Général =====================*/
 body {
   margin: 0;
   padding: 0;
@@ -5,19 +6,18 @@ body {
   max-width: 900px;
   margin: auto;
 }
-
+/*========================== Header =====================*/
 header {
   display: flex;
   justify-content: space-between;
 }
-
-
+/* Header Logo */
 .logo {
   display: flex;
   align-items: center;
 }
-.logo img{
-    max-width: 150px;
+.logo img {
+  max-width: 150px;
 }
 ul {
   display: flex;
@@ -27,14 +27,15 @@ ul li {
   margin-right: 15px;
 }
 
-nav{
-    align-self: flex-end;
+nav {
+  align-self: flex-end;
 }
 
 nav ul li a {
   text-decoration: none;
 }
 
+/*========================= Hero ========================*/
 #Hero {
   background-image: url("https://images.pexels.com/photos/4913537/pexels-photo-4913537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-position: bottom;
@@ -43,26 +44,24 @@ nav ul li a {
   display: flex;
 }
 
-.sail{
-    position:absolute;
-    width: 900px;
-    height: 600px;
-    background-color: black;
-    opacity: 0.6;   
+.sail {
+  position: absolute;
+  width: 900px;
+  height: 600px;
+  background-color: black;
+  opacity: 0.6;
 }
 
-
-#Hero p{
-    font-family: 'Dancing Script', cursive;
-    font-size: 55px;
-    color: rgb(0, 187, 255);  
+#Hero p {
+  font-family: "Dancing Script", cursive;
+  font-size: 55px;
+  color: rgb(0, 187, 255);
 }
 
-#Hero h2{
-color: #fff;
-font-family: 'Sigmar One', cursive;
-font-size: 50px;
-
+#Hero h2 {
+  color: #fff;
+  font-family: "Sigmar One", cursive;
+  font-size: 50px;
 }
 .slogan {
   margin: auto;
@@ -70,6 +69,7 @@ font-size: 50px;
   z-index: 1;
 }
 
+/*========================= Produits ====================*/
 .oreiller,
 .Lit,
 .Chambre {
@@ -91,29 +91,19 @@ font-size: 50px;
   justify-content: space-between;
 }
 
-.line{
-    border-top: 4px solid black;
-    width: 20px;
-    border-radius: 50px;
-    margin:auto
+.line {
+  border-top: 4px solid black;
+  width: 20px;
+  border-radius: 50px;
+  margin: auto;
 }
 
+/*========================= Contact ================*/
 #contact {
   display: flex;
   justify-content: space-between;
   background-color: #f2f2f2;
-  padding-bottom:50px ;
-}
-
-footer {
-  display: flex;
-  justify-content: space-around;
-  background-color: #000000;
-}
-footer p {
-  width: 200px;
-  color: #ffffff;
-  text-align: justify;
+  padding-bottom: 50px;
 }
 
 .oreiller h2,
@@ -131,7 +121,6 @@ p {
 }
 
 /* Fomrulaire*/
-
 input[type^="text"] {
   padding: 15px;
   border-radius: 5px;
@@ -157,50 +146,68 @@ input[type^="submit"]:hover {
   color: #fff;
 }
 
-.contactUs{
+.contactUs {
   max-width: 250px;
 }
 
 /* Map */
-.map{
+.map {
   padding: 15px;
 }
 
-@media (max-width:1048px){
-/* produits */
-#Produit {
+/*========================= Footer =================*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000000;
+}
+footer p {
+  width: 200px;
+  color: #ffffff;
+  text-align: justify;
+}
+
+
+
+/*========================= Query =================*/
+@media (max-width: 1048px) {
+  /* produits */
+  #Produit {
     display: flex;
     flex-wrap: wrap;
   }
-.oreiller, .Lit, .Chambre{
+  .oreiller,
+  .Lit,
+  .Chambre {
     width: 100%;
     margin: 15px auto;
-}
+  }
 
-#contact{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.map{
-  order: -1;
-}
-
-footer{
+  #contact {
     display: flex;
     flex-wrap: wrap;
-}
+    justify-content: center;
+  }
 
-footer p{
+  .map {
+    order: -1;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer p {
     width: 100%;
+  }
 }
 
-}
-
-@media (max-width: 500px){
-    .oreiller img, .Lit img, .Chambre img{
-        width: 300px;
-        margin-left: 19%;
-    }
+@media (max-width: 500px) {
+  .oreiller img,
+  .Lit img,
+  .Chambre img {
+    width: 300px;
+    margin-left: 19%;
+  }
 }
