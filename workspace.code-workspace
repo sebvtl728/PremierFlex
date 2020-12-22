@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "PremierFlex",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PremierFlex"
+	}
+}
