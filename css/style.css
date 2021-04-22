@@ -153,6 +153,18 @@ input[type^="submit"]:hover {
   background-color: rgb(255, 217, 0);
   color: #000;
 }
+#email::-webkit-input-placeholder {
+  color: #fff;
+}
+#email::-moz-placeholder {
+  color: #fff;
+}
+#email:-ms-input-placeholder {
+  color: #fff;
+}
+#email::-ms-input-placeholder {
+  color: #fff;
+}
 #email::placeholder {
   color: #fff;
 }
